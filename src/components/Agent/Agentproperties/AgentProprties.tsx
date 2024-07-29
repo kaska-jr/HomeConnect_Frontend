@@ -1,22 +1,7 @@
-import { useState, useEffect } from "react";
-import AgentProperty from "./AgentProperty";
-import houseprop from "../../../public/houseprop.svg";
+import { useState } from "react";
 import dummyData from "../../dummydata";
-
 import SearchForm from "../../Search/SearchForm";
 import Property from "../../Property";
-
-interface DummyData {
-  address?: string;
-  bedrooms?: number;
-  toilets?: number;
-  parkinglots?: number;
-  price?: string;
-  propertytype?: string;
-  propertyImg: string;
-  Propertycode: string;
-}
-[];
 
 type Property = {
   address?: string;

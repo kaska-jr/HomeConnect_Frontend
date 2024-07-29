@@ -1,5 +1,5 @@
-import AgentNavbar from "../AgentNavbar";
-import AgentProperties from "./AgentProperties";
+import AgentNavbar from "../../../components/User/UserNavbar";
+import AgentProperties from "../../../components/User/Userproperties/UserProprties";
 
 const AgentListings = () => {
   return (

@@ -72,13 +72,13 @@ export default function Signup() {
             <Form />
             <div className="pb-[20px] gap-5">
               <div className="flex gap-2 items-center -mt-2">
-                <div className="bg-primary h-[1px] bg-primary flex-1"></div>
+                <div className=" h-[1px] bg-primary flex-1"></div>
                 <p className="text-primary text-[13px] font-medium">
                   Or Sign Up with
                 </p>
-                <div className="bg-primary h-[1px] bg-primary flex-1"></div>
+                <div className=" h-[1px] bg-primary flex-1"></div>
               </div>
-              <div className="flex flex-col gap-2 pt-4 grid place-items-center">
+              <div className="flex flex-col gap-2 pt-4">
                 <div
                   onClick={handleGoogleLogin}
                   className="w-[204px] h-[30px] border-[1px] rounded-[5px] border-[#797A81] flex items-center pl-[46px]"

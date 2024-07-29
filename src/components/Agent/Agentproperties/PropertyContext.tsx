@@ -1,7 +1,11 @@
 import { createContext, useContext, useReducer } from "react";
-
+type State = typeof initialState;
+type Action = {
+  type: string;
+  payload?: any; // or specify the type of the payload if it's known
+};
 // Create the context
-const PropertyContext = createContext();
+const PropertyContext = createContext({});
 
 // Define an initial state
 const initialState = {
@@ -28,7 +32,7 @@ const SET_PROPERTY_DATA = "SET_PROPERTY_DATA";
 const SET_PREVIEW = "SET_PREVIEW";
 
 // Reducer function to update the state
-const propertyReducer = (state, action) => {
+const propertyReducer = (state: State, action: Action): State => {
   switch (action.type) {
     case SET_PROPERTY_DATA:
       return {
@@ -46,7 +50,7 @@ const propertyReducer = (state, action) => {
 };
 
 // PropertyContext Provider component
-export function PropertyProvider({ children }) {
+export function PropertyProvider({ children }: { children: React.ReactNode }) {
   const [state, dispatch] = useReducer(propertyReducer, initialState);
 
   return (

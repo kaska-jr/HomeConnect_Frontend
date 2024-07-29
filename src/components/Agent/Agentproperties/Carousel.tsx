@@ -1,13 +1,17 @@
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
-import { useState, useEffect } from "react";
+import { useState, useEffect, ReactNode } from "react";
 function Carousel({
   children: slides,
   autoSlide = false,
   autoSlideInterval = 1000,
+}: {
+  children: ReactNode[];
+  autoSlide?: boolean;
+  autoSlideInterval?: number;
 }) {
   const [current, setCurrent] = useState<number>(0);
-  const prev = () =>
-    setCurrent(current === 0 ? slides.length - 1 : current - 1);
+  const slidesLength = slides ? slides?.length : 0;
+  const prev = () => setCurrent(current === 0 ? slidesLength - 1 : current - 1);
   const next = () =>
     setCurrent(current === slides.length - 1 ? 0 : current + 1);
 

@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 // import { useRouter } from "next/navigation";
 import axios from "axios";
-import { toast } from "react-hot-toast";
 import playImg from "../../public/play.svg";
 
 const Forgotpassword = () => {
@@ -13,6 +12,8 @@ const Forgotpassword = () => {
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
+
+  console.log(loading, buttonDisabled);
 
   const ResetPassword = async () => {
     if (user.email.length === 0) {

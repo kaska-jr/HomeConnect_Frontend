@@ -1,4 +1,3 @@
-import React from "react";
 import toiletIcon from "../../../public/Listing_toilet.svg";
 import bedroomIcon from "../../../public/listing_bedroom.svg";
 import parkinglotIcon from "../../../public/Listing_parking.svg";
@@ -12,6 +11,14 @@ function SavedProperty({
   parkingLots,
   address,
   price,
+}: {
+  propertyType: string;
+  propertyPictures: string;
+  toilet: number;
+  bedroom: number;
+  parkingLots: number;
+  address: string;
+  price: string;
 }) {
   return (
     <div className="flex items-center justify-center w-1/3 text-black border-2 rounded-md p-2">

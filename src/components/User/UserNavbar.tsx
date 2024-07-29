@@ -25,6 +25,8 @@ const UserNavbar = () => {
 
   let [navHeight, setNavHeight] = useState<string>("h-[400px]");
 
+  console.log(navHeight);
+
   const SearchProperty = () => {
     console.log("search btn clicked");
   };

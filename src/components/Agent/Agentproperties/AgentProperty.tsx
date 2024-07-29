@@ -1,6 +1,5 @@
 import AgentButton from "../AgentButton";
 import eyeIcon from "../../../public/eye.svg";
-import listing from "../../../public/Listing_Icons.svg";
 import ellipse from "../../../public/Ellipse 26.svg";
 import bedroomImg from "../../../public/listing_bedroom.svg";
 import toiletImg from "../../../public/Listing_toilet.svg";

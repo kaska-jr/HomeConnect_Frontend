@@ -9,9 +9,8 @@ import SquareIcon from "@mui/icons-material/Square";
 import logo from "../../public/logo.svg";
 import profiledp from "../../public/profiledp.svg";
 import PropertyDropdown from "../Agent/Agentproperties/PropertyDropdown";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { IoTriangleSharp } from "react-icons/io5";
-import { TiThMenu } from "react-icons/ti";
 import { IoMdLogOut } from "react-icons/io";
 import {
   HiSquaresPlus,
@@ -20,7 +19,6 @@ import {
 } from "react-icons/hi2";
 import Footer from "../Footer";
 import AgentNotification from "./AgentNotification";
-import { FaHome } from "react-icons/fa";
 
 const AgentNavbar = () => {
   let location = useLocation();
@@ -48,16 +46,8 @@ const AgentNavbar = () => {
 
   const editProperty = () => {
     console.log("edit btn clicked");
+    setIsActive("edit");
   };
-
-  const NAVIGATION_LINKS = [
-    { path: "/", label: "Home" },
-    { path: "/about_us", label: "About" },
-    { path: "/properties", label: "Properties" },
-    { path: "/agents", label: "Agents" },
-    { path: "/blog", label: "Blogs" },
-    { path: "/contact", label: "Contact Us" },
-  ];
 
   const LABELS = [
     {

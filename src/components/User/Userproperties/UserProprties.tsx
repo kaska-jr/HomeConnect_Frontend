@@ -129,18 +129,9 @@ const dummyData: dummyData[] = [
   },
 ];
 
-type Property = {
-  address?: string;
-  bedrooms?: string;
-  toilets?: string;
-  parkinglots?: string;
-  price?: string;
-  propertytype?: string;
-  propertyImg: string;
-};
 const AgentProperties = (): JSX.Element => {
   const [loading, setLoading] = useState<boolean>(true);
-  const [properties, setProperties] = useState<Property[]>([]);
+  const [properties, setProperties] = useState<dummyData[]>([]);
   const [showAllProperties, setShowAllProperties] = useState<boolean>(false);
 
   useEffect(() => {
@@ -181,13 +172,13 @@ const AgentProperties = (): JSX.Element => {
           <div className="flex flex-col items-center justify-center">
             <ul className="properties grid  xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-12 my-8">
               {properties.map(
-                (item: Property, index: number): JSX.Element => (
+                (item: dummyData, index: number): JSX.Element => (
                   <AgentProperty
                     key={index}
                     address={item.address}
-                    bedrooms={item.bedrooms}
-                    toilets={item.toilets}
-                    parkinglots={item.parkinglots}
+                    bedrooms={item.bedrooms?.toString()}
+                    toilets={item.toilets?.toString()}
+                    parkinglots={item.parkinglots?.toString()}
                     price={item.price}
                     propertytype={item.propertytype}
                     propertyImg={item.propertyImg}

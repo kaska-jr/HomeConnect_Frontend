@@ -8,7 +8,6 @@ import Calender from "../public/calender.svg";
 import ChatIcon from "../public/chat_icon.svg";
 import Chat from "../public/char_icon_2.svg";
 import Overview from "../public/overview.svg";
-import latestdeal from "../public/latestdeal.svg";
 import salesIcon from "../public/property_sales_icon.svg";
 import CalenderImg from "../public/calender_num.svg";
 import listingImg from "../public/Listing_Icons.svg";
@@ -21,9 +20,8 @@ import eyeIcon from "../public/eye.svg";
 import ellipse from "../public/Ellipse 26.svg";
 import Chart from "../public/Chart.svg";
 import Doughnut from "../public/doughnut.svg";
-import { FaStar, FaRegBell, FaHeart } from "react-icons/fa";
+import { FaRegBell } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import SavedProperty from "../components/User/Userproperties/SavedProperty";
 import SavedProperties from "../components/User/Userproperties/SavedProperties";
 
 function User() {
