@@ -26,7 +26,7 @@ const Section1: React.FC = () => {
   ];
 
   return (
-    <div className="w-[100%]">
+    <div className="w-[100%] -mt-24 lg:-mt-0">
       <div className="w-full h-[70vh] min-h-[500px] items-center justify-center flex section-one">
         <div className="w-[90%] md:w-[85%] h-full flex flex-col items-center justify-start">
           <div className="w-full h-full flex items-center justify-center">
