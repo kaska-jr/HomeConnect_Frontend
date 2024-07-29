@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import profiledp from "../public/profiledp.svg";
 import payment from "../public/Payment.svg";
 import marketTrends from "../public/market_trends.svg";
-import Love_letter from "../public/Love_letter.svg";
+import Love_letter from "../public/Love_Letter.svg";
 import Calender from "../public/calender.svg";
 import ChatIcon from "../public/chat_icon.svg";
 import Chat from "../public/char_icon_2.svg";
