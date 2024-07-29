@@ -1,7 +1,7 @@
 import seven1 from "../../public/seven1.svg";
 import seven2 from "../../public/seven2.svg";
 import seven3 from "../../public/seven3.svg";
-import Vector from "../../public/Vector.svg";
+import Vector from "../../public/vector.svg";
 import arc from "../../public/arc.svg";
 import { Link } from "react-router-dom";
 
