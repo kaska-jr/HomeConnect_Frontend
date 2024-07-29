@@ -52,7 +52,7 @@ const App = () => {
         </Route>
 
         <Route path="/agent" element={<AgentNavbar />}>
-          <Route path="/agent" element={<Agent />} />
+          <Route index element={<Agent />} />
           <Route path="/agent/properties" element={<AgentProperties />} />
           <Route path="/agent/transactions" element={<AgentTransactions />} />
           <Route path="/agent/notifications" element={<NotificationsPage />} />
@@ -64,7 +64,7 @@ const App = () => {
         </Route>
 
         <Route path="/user" element={<UserNavbar />}>
-          <Route path="/user" element={<User />} />
+          <Route index element={<User />} />
           <Route path="/user/properties" element={<UserProperties />} />
           <Route path="/user/transactions" element={<UserTransactions />} />
           <Route path="/user/add-property" element={<AddProperty />} />
