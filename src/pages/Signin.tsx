@@ -46,11 +46,11 @@ export default function Signin() {
                 </Link>
               </div>
               <div className="flex gap-3 items-center">
-                <Link to="/agents" className="text-[#4959EE] font-bold">
+                <Link to="" className="text-[#4959EE] font-bold">
                   Agent
                 </Link>
                 <div className="h-[20px] w-[1px] bg-black"></div>
-                <Link to="/agents" className="text-[#0B2749] font-bold">
+                <Link to="" className="text-[#0B2749] font-bold">
                   User
                 </Link>
               </div>
