@@ -1,0 +1,1 @@
+# Homeconnect backend endpoint

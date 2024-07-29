@@ -1,0 +1,325 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Montserrat, system-ui, sans-serif;
+    background: #f4f5f5;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #f4f5f5;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+[type="text"],
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="week"],
+[multiple],
+textarea,
+select {
+  outline: none;
+}
+
+[type="email"]:focus {
+  outline: none;
+}
+
+[type="text"],
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="week"],
+[multiple],
+textarea,
+select:focus {
+  outline: none;
+}
+
+.solution1 {
+  background-image: url("/src/public/solution1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.solution2 {
+  background-image: url("/src/public/solution2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.solution3 {
+  background-image: url("/src/public/solution3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.newsletter {
+  background-image: url("/src/public/newsletter.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* overflow: hidden; */
+}
+
+.signup_container {
+  background-image: url("/src/public/signupbg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.section-one {
+  background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.685),
+      rgba(255, 255, 255, 0.829)
+    ),
+    url("/src/public/Rectangle-3792.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  --moz-appearance: textfield;
+}
+
+.section-6 {
+  background: linear-gradient(to right, #0b2749ef 0%, #0b2749be 100%),
+    url("/src/public/house.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact_app {
+  background-image: url("/src/public/contactus.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aboutus {
+  background-image: url("/src/public/aboutus.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.solution1 {
+  background-image: url("/src/public/solution1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.solution2 {
+  background-image: url("/src/public/solution2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.solution3 {
+  background-image: url("/src/public/solution3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sectionNine1 {
+  background-image: url("/src/public/sectionNine2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sectionNine2 {
+  background-image: url("/src/public/sectionNine2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sectionNine3 {
+  background-image: url("/src/public/sectionNine3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bedroom {
+  background-image: url("/src/public/Group1.svg");
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.water-closet {
+  background-image: url("/src/public/gg.svg");
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.carpacked {
+  background-image: url("/src/public/Group3.svg");
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.solution1 {
+  background-image: url("/src/public/solution1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.solution2 {
+  background-image: url("/src/public/solution2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.solution3 {
+  background-image: url("/src/public/solution3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.newsletter {
+  background-image: url("/src/public/newsletter.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signup_container {
+  /* background-image: url("https://thumbs.dreamstime.com/b/sunrise-over-beach-cancun-beautiful-mexico-40065727.jpg"); */
+  background-image: url("/src/public/signupbg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  --moz-appearance: textfield;
+}
+
+.section_6 {
+  background-image: url("/src/public/house.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact_app {
+  background-image: url("/src/public/contactus.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aboutus {
+  background-image: url("/src/public/aboutus.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.solution1 {
+  background-image: url("/src/public/solution1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.solution2 {
+  background-image: url("/src/public/solution2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.solution3 {
+  background-image: url("/src/public/solution3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sectionNine1 {
+  background-image: url("/src/public/sectionNine1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sectionNine2 {
+  background-image: url("/src/public/sectionNine2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sectionNine3 {
+  background-image: url("/src/public/sectionNine3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signin-bg-gradient {
+  background: url(/images/living-room.svg),
+    lightgray -301.944px 0px / 146.275% 148.359% no-repeat;
+}
+
+.sigin-box {
+  border-radius: 15px;
+  border: 1px solid #d9d9d9;
+  background: linear-gradient(180deg, #fff 33.8%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 6px 7px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+.property:first-child {
+  box-shadow: 0 0 10px 0 rgba(13, 153, 255, 0.5);
+}
+
+.sec-lady {
+  background: url(/src/public/sectiontwo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg_img {
+  background-image: url(/src/public/profiledp.svg);
+}
